@@ -1,0 +1,466 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #202c3a; /* لون الخلفية كما في الصورة */
+    color: white
+}
+.header-links {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    position: relative;
+}
+
+.language img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.language:hover .dropdown {
+    display: block;
+}
+
+.account {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(59, 54, 54);
+    color: black;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.account:hover .dropdown {
+    display: block;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #f08804; /* لون الخلفية للرقم */
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color: #232f3e;
+    color: white;
+    padding: 10px;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.location img{
+    height: 20px;
+    margin-right: 5px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+.location-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-bar select option {
+    margin-left: 10px;
+    
+}
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.search-bar select {
+    padding: 5px;
+    background-color: #ffffff;
+    border: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar input {
+    flex-grow: .7;
+    padding: 10px;
+    border: none;
+}
+
+.search-bar button {
+    background-color: #febd69;
+    border: none;
+    padding: 5px;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-bar button img {
+    height: 20px;
+    margin-right: 5px;
+    background-color: #febd69;
+}
+
+
+.header-links {
+    display: flex;
+    align-items: center;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.language img {
+    height: 20px;
+    margin-right: 5px;
+}
+.search-bar input {
+    padding: 5px;
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.banner {
+    text-align: center;
+    padding: 50px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+.category {
+    text-align: center;
+    margin-left: 10px;
+
+}
+
+.category img {
+    max-width: 200px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+.hero-section {
+    background-color: #acec8c; /* لون مشابه */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.hero-image .hero-imgs {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.hero-section .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000; 
+}
+.slider-arrow {
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.hero-content {
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+.hero-content h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.hero-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* --- قسم البانر --- */
+.banner-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 20px;
+}
+
+.category-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* تخطيط الصور الأفقية */
+.category-images {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    overflow-x: auto; /* للسماح بالتمرير الأفقي إذا لزم الأمر */
+}
+-------------------------------------------------
+.image-accessories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-accessories p {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* تخطيط الصور الشبكي */
+.category-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.category-image .image-accessories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-image .image-accessories img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.category-image .image-accessories p {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* تعديلات خاصة لبطاقة "Shop for your home essentials" */
+.accessories .category-image {
+    grid-template-columns: repeat(2, minmax(80px, 1fr)); /* لضمان عرض العناصر بشكل صحيح */
+}
+
+.accessories .category-image .image-accessories img {
+    max-height: 80px; /* للحفاظ على تناسق الحجم */
+    object-fit: cover; /* لملء الحاوية دون تشويه الأبعاد */
+}
+
+/* تعديلات خاصة لبطاقة "New year, new supplies" */
+.new-supplies .category-image .image-accessories img {
+    max-height: 120px; /* قد تحتاج تعديل حسب الصور */
+    object-fit: cover;
+}
+.new-supplies .category-image {
+    grid-template-columns: repeat(2, minmax(80px, 1fr)); /* لضمان عرض العناصر بشكل صحيح */
+}
+
+.new-supplies .category-image .image-accessories img {
+    max-height: 80px; /* للحفاظ على تناسق الحجم */
+    object-fit: cover; /* لملء الحاوية دون تشويه الأبعاد */
+}
+__------------------------------------------
+
+.category-images.horizontal {
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.category-images.horizontal .image-container {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    height: auto;
+    border-radius: 3px ;
+}
+
+.category-images .image-container img {
+    display: block;
+    max-width: 100px;
+    height: auto;
+    border-radius: 3px;
+}
+
+.category-images .image-container p {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+.horizontal .category-images {
+    grid-template-columns: repeat(2, minmax(80px, 1fr)); /* لضمان عرض العناصر بشكل صحيح */
+}
+
+.horizontal .category-images .image-container img {
+    max-height: 80px; /* للحفاظ على تناسق الحجم */
+    object-fit: cover; /* لملء الحاوية دون تشويه الأبعاد */
+}
+.new-supplies .category-images .image-container img {
+    max-height: 120px; /* قد تحتاج تعديل حسب الصور */
+    object-fit: cover;
+}
+
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container p {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* تخطيط الصور الشبكي */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.category-grid .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-grid .grid-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.category-grid .grid-item p {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* تعديلات خاصة لبطاقة "Shop for your home essentials" */
+.home-essentials .category-grid {
+    grid-template-columns: repeat(2, minmax(80px, 1fr)); /* لضمان عرض العناصر بشكل صحيح */
+}
+
+.home-essentials .category-grid .grid-item img {
+    max-height: 80px; /* للحفاظ على تناسق الحجم */
+    object-fit: cover; /* لملء الحاوية دون تشويه الأبعاد */
+}
+
+/* تعديلات خاصة لبطاقة "New year, new supplies" */
+.new-supplies .category-grid .grid-item img {
+    max-height: 120px; /* قد تحتاج تعديل حسب الصور */
+    object-fit: cover;
+}
+.new-supplies .category-grid {
+    grid-template-columns: repeat(2, minmax(80px, 1fr)); /* لضمان عرض العناصر بشكل صحيح */
+}
+
+.new-supplies .category-grid .grid-item img {
+    max-height: 80px; /* للحفاظ على تناسق الحجم */
+    object-fit: cover; /* لملء الحاوية دون تشويه الأبعاد */
+}
+
+
+.hero-imgs {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #030303;
+}
